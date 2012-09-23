@@ -30,6 +30,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+        <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
         <!--[if lt IE 7]>

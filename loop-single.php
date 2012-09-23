@@ -9,14 +9,12 @@
 <div class="posts">
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?> >
-	<span class="entry-category"><?php the_category(' ') ?></span>
-    <h2 class="entry-title" href="<?php the_permalink(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
-
-    <?php if( has_post_thumbnail() ) {?>
-    	<div class="entry-thumbnail"><a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail(); ?></a></div> 
-    <?php } ?>
+    <hgroup>
+      <span class="entry-category"><?php the_category(' ') ?></span>
+      <h2 class="entry-title" href="<?php the_permalink(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
+      <p class="entry-meta">By: <?php the_author(); ?> <?php edit_post_link('(Edit)'); ?></p>
+    </hgroup>
     <section class="entry-content"><?php the_content(); ?></section>
-
     <?php if(has_tag()) { ?>
     <p class="entry-tags"><?php the_tags(); }?></p>
 
