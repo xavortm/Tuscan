@@ -1,0 +1,202 @@
+/*
+Theme Name: Tuscan
+Author: Alexander Dimitrov
+Author URI: http://www.xavortm.com
+Description: Minimalistic theme for bloggers. 
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, light, two-columns, right-sidebar, fixed-width, featured-images, sticky-post
+Text Domain: tuscan
+
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100%; overflow:scroll;}
+html, button, input, select, textarea { font-family: "Droid Sans", sans-serif; color: #222; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 20px 0 20px 20px; padding-left: 20px; border-left: 3px solid #f0f0f0}
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+dd { margin: 0 0 0 40px; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+@media only screen and (min-width: 35em) {
+}
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } 
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+strong {font-weight: 700}
+
+a {color: #5CCC5C; text-decoration: none}
+a:hover {text-decoration: underline;}
+
+body { font-family: "Open Sans", arial; line-height: 1.8em; font-size: 16px; color: #666}
+.wrapper {margin: 0 auto; width: 960px;}
+::selection {background: #5CCC5C; color: white}
+
+ul {margin: 0; padding: 0}
+li {list-style: none; padding: 0; margin: 0;}
+
+/* Typography
+=============================================== */
+h1,h2,h3,h4,h5, h6 {font-family: "Arvo", "Segoe UI Bold", arial; font-weight: 700; color: black}
+h1 {font-size: 28px;}
+h2 {font-size: 24px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 12px;}
+p { margin: 30px 0 }
+.alignright {float: right; margin: 30px 0 30px 30px}
+.alignleft {float: left; margin: 30px 30px 30px 0}
+
+/* Buttons */
+input[type="submit"],
+.button {background: #5CCC5C; color: white; padding: 10px 20px; border: none;font-family: "Arvo", "Segoe UI Bold", arial; font-weight: 400; }
+
+/* header
+=============================================== */
+
+#header .top{ text-align: center; background: #fff url("images/shadow.png") no-repeat top center; padding-top: 50px;  position: relative;}
+#header .top a.logo { text-decoration: none; display: block; }
+#header .top a.logo h1 { display: block; color:#000; font-size: 38px; font-family: "Arvo", Helvetica, "Segoe UI Bold", arial, sans-serif; font-weight: 700; margin-bottom: 15px;-webkit-transition-duration: 0.3s;-moz-transition-duration: 0.3s;-o-transition-duration: 0.3s;transition-duration: 0.3s;}
+#header .top a.logo h1:hover { color: #5CCC5C }
+#header .top .description { font-family: "Droid serif", "Georgia", serif; font-size: 16px; color: #999; font-style: italic; margin: 0 }
+
+#header nav { margin: 40px auto; display: block; overflow: hidden; width: 960px;}
+#header nav ul li {float: left;}
+#header nav ul li:first-child a {padding-left: 0}
+#header nav ul li a {padding: 0px 10px;color: black;margin-right: 20px; text-decoration: none; font-family: "Segoe UI Light", arial, sans-serif; font-size: 22px; -webkit-transition-duration: 0.2s;-moz-transition-duration: 0.2s;-o-transition-duration: 0.2s;transition-duration: 0.3s;}
+#header nav ul li a:hover {color: #5CCC5C}
+
+/* main
+=============================================== */
+#main {clear: both; /*padding-top: 100px;*/ overflow: hidden;/*background: #fff url("images/shadow2.png") no-repeat top center*/}
+
+.content {width: 600px; float: left; padding-right: 60px;}
+.content.fullwidth {width: 960px;}
+
+.entry {margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f0f0f0; clear: both ; display: block; overflow: hidden;}
+.entry:last-child {border-bottom: none}
+.entry-title {margin-bottom: 20px;}
+.entry-title a{color: black; }
+.entry-thumbnail {margin-bottom: 20px; float: left; overflow: hidden; position: relative; display: block; -webkit-transition-duration: 0.3s;-moz-transition-duration: 0.3s;-o-transition-duration: 0.3s;transition-duration: 0.3s;}
+.entry-thumbnail:hover {opacity: 0.5}
+.entry-meta, 
+.entry-category {font-family: "Arvo", "Courier New"; text-transform: uppercase; font-size: 10px; margin-top: 0px; color: #ccc}
+.entry-category {font-size: 16px; margin-bottom: -20px; display: block}
+
+.entry.sticky { background: url("images/sticky.png") no-repeat top right }
+
+.posted-by {background:#f9f9f9; border: 1px solid #f0f0f0; padding: 30px; font-size: 12px;}
+.posted-by p {margin-bottom: 0!important}
+
+/* Post formats */
+.format-link .entry-title {padding-left: 60px; min-height: 32px; background: url("images/link.png") no-repeat left center;}
+
+/* Comments */
+#comment {width: 100%}
+#comments {clear: both;}
+#comments ol {margin: 0; list-style: none; padding: 0}
+#comments ol li {border-bottom: 1px solid #ccc;margin:0; padding-top: 20px;}
+#comments ol li:first-child {border-top: 1px solid #ccc;}
+#comments ol li:last-child {border-bottom:none }
+#comments .children {list-style: none; margin-left: 20px}
+#comments-title {font-family: "Segoe UI Bold", arial, sans-serif; font-size: 24px; }
+#comments-title em {font-family: "Droid serif"; color: #666; }
+.comment-body { color:#000; margin-top: 0.2em;}
+.comment-author,
+.commentmetadata {font-size: 12px; color:#999;}
+
+#commentform span,
+#commentform label {display: inline;}
+#reply-title {font-family: "Segoe UI Bold", arial, sans-serif; font-size: 24px; margin-top: 1.5em;padding-left: 60px; min-height: 32px; background: url("images/comment.png") no-repeat left center;}
+.reply {text-align: right}
+.comment-reply-link {font-weight: bold}
+.cancel-comment-reply-link {font-size: 14px;}
+.nocomments {font-weight: bold;}
+
+#commentform input[type="text"],
+#commentform textarea { display: block; padding: 5px 10px; border: 1px solid #ccc;-webkit-transition-duration: 0.3s;-moz-transition-duration: 0.3s;-o-transition-duration: 0.3s;transition-duration: 0.3s;}
+
+#commentform input[type="text"]:focus,
+#commentform textarea:focus {background:#f0f0f0; border: 1px solid #bbb; outline: none}
+
+/* SIDEBAR */
+.sidebar {width: 280px; float: right}
+.sidebar .widget {margin-bottom: 30px;}
+.sidebar-heading {margin-bottom: 15px;}
+#s { width: 260px; padding: 5px; background:#f9f9f9; color: #999; border: 1px solid #ccc; outline: none} /* The search form*/
+/* Footer
+=============================================== */
+#footer {border-top: 1px solid #f0f0f0; padding-top: 30px;margin-bottom: 30px; color:#ccc; font-size: 12px; margin-top: 50px; clear: both}
