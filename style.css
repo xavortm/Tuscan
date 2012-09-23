@@ -100,12 +100,14 @@ strong {font-weight: 700}
 a {color: #5CCC5C; text-decoration: none}
 a:hover {text-decoration: underline;}
 
-body { font-family: "Open Sans", arial; line-height: 1.8em; font-size: 16px; color: #666}
+body { font-family: "Open Sans", arial; line-height: 1.8em; font-size: 16px; color: #666; background:#f0f0f0}
 .wrapper {margin: 0 auto; width: 960px;}
 ::selection {background: #5CCC5C; color: white}
 
 ul {margin: 0; padding: 0}
 li {list-style: none; padding: 0; margin: 0;}
+
+.container {display: block; background: #fff; width: 980px; margin: 0 auto; padding: 80px; margin-bottom: 50px; margin-top: 30px; box-shadow: 0 0 50px #ccc}
 
 /* Typography
 =============================================== */
@@ -127,7 +129,7 @@ input[type="submit"],
 /* header
 =============================================== */
 
-#header .top{ text-align: center; background: #fff url("images/shadow.png") no-repeat top center; padding-top: 50px;  position: relative;}
+#header .top{ text-align: center; background: #fff url("images/shadow.png") no-repeat top center;  position: relative;}
 #header .top a.logo { text-decoration: none; display: block; }
 #header .top a.logo h1 { display: block; color:#000; font-size: 38px; font-family: "Arvo", Helvetica, "Segoe UI Bold", arial, sans-serif; font-weight: 700; margin-bottom: 15px;-webkit-transition-duration: 0.3s;-moz-transition-duration: 0.3s;-o-transition-duration: 0.3s;transition-duration: 0.3s;}
 #header .top a.logo h1:hover { color: #5CCC5C }
